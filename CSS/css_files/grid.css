@@ -1,0 +1,18 @@
+.container{
+    display:grid;
+    /* justify-content: center;
+    align-items: center;
+    height:100vh; */
+    grid-template-columns:1fr 2fr 1fr  ;
+    gap:20px;
+}
+.item{
+     background-color:black;
+     color:white;
+     justify-items:center;
+     align-items:center;
+    text-align:center;
+}
+img{
+    margin-top:18px;
+}

@@ -1,0 +1,25 @@
+body{
+    background-color: mediumorchid;
+    display:flex;
+    justify-content:flex-start; /*sshould be given whenever using display : flex*/
+    align-items:center; /* for centering horizontally according to the parent*/
+    height:100vh; /*takes the full height of the body because here body is the parent 
+    and it will take only the size of the child and center it to the div child onlu  so centering 
+    it to the body of the full page we need to use vh
+    should be given to center your to center of the page vh means viewport height*/
+    gap :5px;
+    flex-direction:column; /*to change the horizontal rows to the vertical columns*/
+}
+.flex{
+    width: 200px;
+    height:200px;
+    padding:20px;
+    background-color: black;
+    color:white;
+    border:3px solid white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+

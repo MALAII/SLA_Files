@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Register</title>
+    </head>
+    <body>
+        <main>
+            <div>
+                <center>
+                <form action="" autocomplete="on">
+                    <label for="fullname">Full Name :</label>
+                    <input type="text" placeholder="Enter the full name" maxlength="50" minlength="10" pattern="[A-Z a-z]" required />
+                    <br><br>
+                    <label for="email">Email id :</label>
+                    <input type="email" placeholder="example@gmail.com" required>
+                    <br><br>
+                    <label for="password">Password :</label>
+                    <input type="password" placeholder="At least 8 characters"  minlength="8" maxlength="20" required >
+                    <small>
+                        (Must contain 1 uppercase, 1 lowercase , numbers&text)
+                    </small>
+                    <br><br>
+                    <label for="age">Age :</label>
+                    <input type="number" placeholder="example 25"  min="18" max="65" required >
+                    <br><br>
+                    <label for="Dob">DOB:</label>
+                    <input type="datetime-local" required >
+                    <br><br>
+                    <label for="phone">Mobile no:</label>
+                    <input type="tel" placeholder="34837439402"  pattern = "[1-10]{10}"required >
+                    <br><br>
+                    <label for="URL">URL :</label>
+                    <input type="url" placeholder="https://difjdifijifj39e/jfiefwjow/" required >
+                    <br><br>
+                    <label for="file">Upload your resume:</label>
+                    <input type="file" accept=".doc,.pdf,.jpeg" required >
+                    <br><br>
+                <label for="color">Choose your favourite color :</label>
+                <input type="color">
+                <br><br>
+                <label for="experience">Experience (20)</label>
+                <input type="range" min="0" max="20" >
+                <br><br>
+                <label>Gender :</label>
+                <label for="Male">male</label>
+                <input type="radio" name="gender">
+                <label for ="female">Female</label>
+                <input type="radio" name="gender">
+                <br><br>
+                <label>Skills :</label>
+                <label for="js">Javascript </label>
+                <input type="checkbox" name="skills">
+                <label for="python">Python</label>
+                <input type="checkbox" name="skills">
+                <label for="java">Java</label>
+                <input type="checkbox" name="skills">
+                <br><br> 
+                <input type="submit" value="Register" name="submit">
+                <input type="reset" value="Reset" name="Reset">
+                <br><br>
+                <label>Rating :</label>
+                <label>⭐</label>
+                <input type="checkbox" value="⭐">
+                <label>⭐</label>
+                <input type="checkbox" value="⭐">
+                <label>⭐</label>
+                <input type="checkbox" value="⭐">
+                <label>⭐</label>
+                <input type="checkbox" value="⭐">
+                <label>⭐</label>
+                <input type="checkbox" value="⭐">
+          
+              
+                    
+                </form>
+                </center>
+            </div>
+        </main>
+    </body>
+</html>
