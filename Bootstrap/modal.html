@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-center align-items-center p-5">
+            <button class="btn btn-danger h-30" data-bs-toggle="modal" data-bs-target="#modalid">register</button>
+        </div>
+
+    </header>
+
+    <!-- modal act -->
+    <section class="modal fade" id="modalid" tabindex="-1" aria-labelledby="modalid" aria-hidden="false">
+        <!-- modal view -->
+        <div class="modal-dialog">
+            <!-- content -->
+            <div class="modal-content">
+                <!-- header -->
+                <div class="modal-header">
+                    <h3>reg form</h3>
+                    <button class="close" data-bs-dismiss="modal"><span aria-hidden="false">x</span></button>
+                </div>
+                <!-- body -->
+                <div>
+                    <form action="">
+                        <table>
+                            <td><label for="">name</label></td>
+                            <td><input type="text" name="" id=""></td>
+                        </table>
+                    </form>
+                </div>
+                <!-- footer -->
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-dismiss="modal">submit</button>
+                    <button class="btn btn-info" data-bs-dismiss="modal">cancel</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

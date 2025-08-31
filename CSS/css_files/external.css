@@ -1,0 +1,22 @@
+ *{
+            background-color:blueviolet;
+            color:white;
+            font-family:sans-serif;
+            text-align:center;
+        }
+        .about img{  
+            border-radius: 20px;
+        }
+        
+        .about h1,h2{
+            text-decoration:underline;
+        }
+        .projects h1{
+            text-decoration:underline;
+        }
+        .projects ul{
+            list-style-position:inside;
+            display:inline-block;
+            text-align:center;
+            
+        }
