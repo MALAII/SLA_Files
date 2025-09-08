@@ -1,0 +1,75 @@
+<!-- conditional statements:
+ 1. for loop
+ 2. while loop
+ 3. do-while loop
+
+ Looping : iteration(Continuous Execution)
+ syntax:
+ for (value initialization ; test condition ; ++ or -- )increment or decrement
+ for (let i=0 ; i<=10 ; i++  ) wokrs only the condition is satisfied
+ {
+    console.log('print my i value', + ' ' + i)
+
+    i=1                i=<10                     i++
+    i=2                checks condition          ++
+    i=3                checks condition          ++ every single time it will do increment before it gets stops
+    i=4                checks condition          ++
+    i=5                checks condition          ++
+    i=6                checks conditon           ++
+    i=7                checks condition          ++
+    i=8                checks condition          ++
+    i=9                checks condition          ++
+    i=10               checks condition          stops
+ } -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //     for (let i=0 ; i<=10 ; i++  )
+    //  {
+    //     console.log('print my i value', + ' ' + i)
+    //  } 
+    // str='javascript'
+    // for (let i=0; i<str.length;i++)
+    // {
+    //     console.log(str[i]) sqaure brackets is for  iterating the each character from start to end
+
+    // }
+    // homogeneous data values
+   // const course = ['py', 'css', 'html', 'js', 'php', 'beta', 'sql']
+    // for (let j = 0; j < course.length; j++) {
+    //     console.log(course[j])
+    // }
+    //    heterogeneous datatype values
+    // const hetro = ['bb', 'gt', 45, 3.4, 'we', 113]
+    // for (let i = 0; i < hetro.length; i++) {
+    //     console.log(hetro[i])
+    // }
+
+    // reverse string
+     let str='reverse';
+    for(let j=str.length-1 ; j>=0 ; j--)
+{
+    console.log(str[j])
+}
+    //   TASK:
+    //  1. print reverse of for loop from 10 to 0 
+    // for(let i=10 ; i<=0 ; i++)
+    // {
+    //     console.log('reversed'+' ' + i)
+    // }
+    // 2. print reverse of for loop string name='artificial'
+
+    //3. print reverse of natural no in for loop.50 to 100
+</script>
+
+</html>
