@@ -2,6 +2,7 @@
 let personname='lohith';
 {
     console.log(personname)
+    console.log(`hello ${course}`) //its for printing the variable declaration $ symbol is for variable declaration and `  is for printing
     console.log(typeof(personname))
 }
 

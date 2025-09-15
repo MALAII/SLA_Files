@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+ <script>
+        function Validatecontact(){
+            var contact=document.myform.contact.value;
+            if(contact.length===10){
+                alert('Valid Contact  number')
+                return false;
+            }
+            else {
+                alert('invalid contact number')
+                return false;
+            }
+        }
+    </script>
+<body>
+      <form name="myform" method="post" action="contact.php" onsubmit="Validatecontact()">
+        CONTACT NO: <input type="text" name="contact"><br><br>
+        <input type="button" onclick="Validatecontact()" value="submit">
+      </form>
+</body>
+</html>
+<!-- another method: -->
+<!-- contact number validation -->
+<!-- var num =document.myform.num.value
+if(isNaN(num))
+return false;
+
+form name=myform action= method=
+input type=number
+input type=sumit -->
+
+
+<!-- task:
+email validation:
+@. smaller uppercase convert to lowercase
+string inbuild functions
+.lower() --- method for converting the upper to lower -->

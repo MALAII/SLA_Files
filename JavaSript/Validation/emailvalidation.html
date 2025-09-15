@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Email Validation</title>
+    <script>
+        function demo() {
+            var name = document.myform.name.value;
+            var email = document.myform.email.value;
+            var password = document.myform.password.value;
+
+            if (!name) {
+                alert('Name cannot be empty');
+                return false;
+            }
+
+            if (!email) {
+                alert('Email cannot be empty');
+                return false;
+            }
+
+            // Regular expression for validating email format
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address');
+                return false;
+            }
+
+            if (password.length <= 8) {
+                alert('Password length must be above 8 characters');
+                return false;
+            }
+
+            return true; // All validations passed
+        }
+    </script>
+</head>
+<body>
+    <form name="myform" method="post" action="abc.php" onsubmit="return demo();">
+        NAME: <input type="text" name="name"><br><br>
+        EMAIL: <input type="text" name="email"><br><br>
+        PASSWORD: <input type="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

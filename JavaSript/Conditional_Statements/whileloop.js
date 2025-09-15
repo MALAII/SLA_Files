@@ -1,7 +1,9 @@
 // while loop:
 // ----------
-//  It is also called as entry control level loop
 // while loop means the condition is iniatilly evaluated before the each iteration of the  loop it may execute till infinte numbers of times until the statement gets false 
+// It's also called a pre-test loop because the condition is checked before the loop body executes.
+// Sometimes it's referred to as an entry-controlled loop.
+
 // syntax:
 // -------
 // while(condition)
@@ -14,10 +16,19 @@
 // increment/decrement    no++;
 //                         }
 
-// do while loop:
-// -------------
-// assessment
-// do while loop will execute the code atleast once even if it is true or false.
+// This program prints numbers from 1 to 5 using a while loop:
+
+// let count = 1;
+// while (count <= 5) {
+//     console.log("Number: " + count);
+//     count++;
+// }
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,34 @@
+DOM stands for Document Object Model .
+Document :
+--------
+file html, xml
+Objects :
+--------
+Tags , elements
+Model:
+------
+layout structure html , xml, structure
+
+Dom is the platform and language neutral interface that allows program and scripts to dynamically access and update the content, 
+structure and style of the Document
+
+Dom separated in 3 types:
+------------------------
+core dom : standard model for all html document types
+XML dom: standard model  for xml document - XML stands for Extensible Markup Language which will have the script inside the html code document.
+html dom: standard model for html document
+
+interface to access content manipulate content dynamically
+
+html dom?
+html code will be converted into objects [which will have properties , methods, events]
+it defines:
+html elements as object
+considers properties of all html elements 
+methods to access all html elements /actions
+events for all html elements 
+in other words the html dom is standard for how to get, change, add, or delete html document.  
+
+DOM diagram in screen shots. 
+ 
+ 

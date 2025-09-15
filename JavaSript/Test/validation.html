@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+</head>
+<script>
+    // 6. differentiate onsubmit and onclick html events
+    // 7. validate a password length must be above 9 characters with html embedded with script
+      function checkpassword() {
+        var name=document.myform.name.value;
+        var password = document.myform.password.value;
+        if (password.length>=9 ) {
+            alert('Valid Password')
+        }
+        else  {
+            alert('The password characters must be above 9 characters')
+        }
+    }
+</script>
+<body>
+    <form name="myform" method="post" action="form.php">
+        NAME:  <input type="text" name="name"> <br> <br>
+       PASSWORD : <input type="password" name="password" ><br><br>
+        <input type="button" onclick="checkpassword()" value="submit">
+    </form> 
+    
+</body>
+</htmlt

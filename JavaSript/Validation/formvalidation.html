@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<script>
+    function demo(){
+var name=document.myform.name.value;
+var password=document.myform.password.value;
+
+if(name==""|| name==null)
+{
+   alert('name cant be empty');
+    return false;
+}
+else if(password.length <= 8)
+{
+    alert('password length must be above 8 characters');
+    return false;
+}
+}
+</script>
+ <body>
+    <form name="myform" method="post" action="abc.php">
+      NAME:  <input type="text" name="name"> <br> <br>
+      PASSWORD:  <input type="password" name="password"><br><br>
+      <input type="button" onclick="demo()" value="submit" >
+    </form>
+</body>
+</html>
+

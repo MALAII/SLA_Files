@@ -1,21 +1,25 @@
-//    let marks='Good';
-//    switch(marks)
-// {
-//     case 'excellent':
-//     console.log('The grade is A ')
-//     break;
-//      case 'Good':
-//     console.log('The grade is B')
-//     break;
-//      case 'Average':
-//     console.log('The grade is C')
-//     break;
-//      case 'BelowAverage':
-//     console.log('The grade is D ')
-//     break;
-//     default:
-//     console.log('invalid marks')
-// }
+// example 1:
+
+let marks='Good';
+   switch(marks)
+{
+    case 'excellent':
+    console.log('The grade is A ')
+    break;
+     case 'Good':
+    console.log('The grade is B')
+    break;
+     case 'Average':
+    console.log('The grade is C')
+    break;
+     case 'BelowAverage':
+    console.log('The grade is D ')
+    break;
+    default:
+    console.log('invalid marks')
+}
+
+// example 2:
 
 let day = 'friday';
 let message;
