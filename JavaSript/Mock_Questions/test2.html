@@ -1,0 +1,31 @@
+<!-- 2.build a form with a input field and a button when the button is clicked display the 
+values entered in the input field with a new div element of the page. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+
+<body>
+    <h3>FORM</h3>
+    <input type="text" id="myInput" placeholder="Type here">
+    <button onclick="showValue()">Submit</button>
+    <div id="output"></div>
+
+    <script>
+        function showValue() {
+            let value = document.getElementById("myInput").value;
+
+            let newDiv = document.createElement("div");
+            newDiv.textContent = value;
+            document.getElementById("output").appendChild(newDiv);
+            document.getElementById("myInput").value = "";
+        }
+    </script>
+</body>
+
+</html>

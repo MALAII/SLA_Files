@@ -1,0 +1,29 @@
+<!-- Syntax:
+------- 
+using textcontent the content is added to the html element
+let newpara = document.createElement("");
+document.body.appendChild(newpara); -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<Script>
+    let newpara = document.createElement("p");
+
+    newpara.textContent = "Hello! I was added using Javascript";
+
+    newpara.style.background = "lightblue";
+    newpara.style.padding= "10px";
+    newpara.style.marginTop = "10px;"
+    newpara.style.border = "1px solid #000";
+
+    document.body.appendChild(newpara);
+</Script>
+</html>

@@ -1,0 +1,42 @@
+Array Methods:
+-------------
+Push appends an element to the end
+let fruits = ["apple" , "Orange"];
+fruits.push("pear");
+
+alert(fruits);
+unshift get an element from the beginning
+let fruits2 = ["Apple " , "Orange " , "pear"];
+alert(fruits2.unshift());
+
+alert (fruits2);
+push adds an element to the end
+pop takes an element from the end
+let fruits1=["apple", "orange", "pear"];
+example:
+--------
+const users=[
+    {
+        id:5,
+        name='jayashree',
+        age:31
+    }, 
+    {
+        id:4,
+        name:malai,
+        age:21
+
+    },
+    {
+        id:
+    }
+
+]
+console.log(users);
+console.log(users[2].city)
+console.log(users[1].name) //dot notation
+
+mixed datatype values
+accessing the nested values or two dimmensional array
+let table=[[2,3,2,1] , [3,5,3,2], [8,4,5,3]]
+console.log(table[1][2])

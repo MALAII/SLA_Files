@@ -1,0 +1,85 @@
+<!-- OOPS:
+----
+Object Oriented Programming Language
+Object-Oriented Programming (OOP) is a way of writing programs using objects that hold both 
+information and actions, making it easier to organize and manage the code.
+object-car
+properties and values
+javasript lang scripting Language
+ 
+OOPS PRINCIPLES:
+----------------
+CLASS:
+------
+class means it is the internal datamodel references of  itself.
+The class defines its own data structure (like fields or properties).
+
+It knows how to create objects (instances) with that structure.
+
+Each object created from the class will refer to this structure — its own internal model.
+A blueprint for creating objects.
+
+RULES FOR CLASS:
+----------------
+class keyword must be there
+ following to that class name must be in capitalize.
+for one class we can able to call multiple ojects.
+
+
+OBJECTS:
+-------
+An object means reference of the class
+create an object inside a class
+var classnew = new objectname
+An instance of a class.
+
+
+new keyword - instance of object -for immediate calling
+this keyword - represents of the owner of the object
+constructor function - is the default function
+which always represents the object.
+
+both classes and objects are dependent on each other.
+
+3. Data encapsulation
+4. Data abstraction
+5. Inheritance
+6. Polymorphism -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    class Student {
+        constructor(id, name, city, email) //default constructor function for giving the properties of the object
+        {
+            this.id = id  //this keyword represents the owner of the particular object
+            this.name = name
+            this.city = city
+            this.email = email
+        }
+        display() {
+            document.write('my stdid:' + ' ' + this.id + '' + 'my stdname:' + '' + this.name + 'my stdcity:' + '' + this.city + 'my stdmail:' + '' + this.email);
+        }
+    }
+    var obj1 = new Student(9001,'malai','vellore','malai234@gmail.com');  // = is for object creation
+    var obj2 = new Student(9002,'saranya','vellore','sarai234@gmail.com');
+    var obj3 = new Student(9003,'sachin','chennai','sachin234@gmail.com');
+    var obj4 = new Student(9004,'hemnath','bangalore','hemnath234@gmail.com');
+    obj1.display() // . is for accessing the objects
+    obj2.display()
+    obj3.display()
+    obj4.display()
+
+</script>
+
+</html>

@@ -1,0 +1,22 @@
+Mock questions:
+--------------
+What is the difference between == and === ?
+What is DOM ?
+How the DOM communicate with the HTML ?
+What is the difference the querySelector and querySelectorAll ?
+Explain about Object Oriented Programming Language ?
+What is the purpose of this keyword and we use it ?
+Difference between for loop and while loop ?
+Explain switch statement ?
+difference between if else statement and switch statement ?
+difference between var , let and const ?
+difference betwween .innerhtml and textcontent?
+
+Scenario based questions:
+-------------------------
+1.create a simple button that  when clicked changes the background colour of the body element
+ to a random colour.
+2.build a form with a input field and a button when the button is clicked display the 
+values entered in the input field with a new div element of the page.
+3. develop a simple calculator interface that takes two numbers and an operator displays 
+the result when the calculator button is clicked.

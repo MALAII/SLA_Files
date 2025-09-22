@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    class Employee {
+        constructor(id, name, city, email) //default constructor function for giving the properties of the object
+        {
+            this.id = id  //this keyword represents the owner of the particular object
+            this.name = name
+            this.city = city
+            this.email = email
+        }
+                  display() {
+            document.write('my empid: ' + this.id + ' ' +
+                           'my empname: ' + this.name + ' ' +
+                           'my empcity: ' + this.city + ' ' +
+                           'my empmail: ' + this.email + '<br><br>');
+        }
+    }
+    var emp1 = new Employee(9001,'malai','vellore','malai234@gmail.com');  // = is for object creation
+    var emp2 = new Employee(9002,'saranya','vellore','sarai234@gmail.com');
+    var emp3 = new Employee(9003,'sachin','chennai','sachin234@gmail.com');
+    var emp4 = new Employee(9004,'hemnath','bangalore','hemnath234@gmail.com');
+    emp1.display() // . is for accessing the objects
+    emp2.display()
+    emp3.display()
+    emp4.display()
+
+</script>
+
+</html>

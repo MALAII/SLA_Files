@@ -1,7 +1,7 @@
 // Functions:
 // ---------
 // It is block of code which is going to perform a specific task when an event triggers .
-// A function perfomrs meaningful task or an action when it is called .
+// A function performs a  meaningful task or an action when it is called .
 // A function is consists of with parameters and without parameters
 // With parameter - call by value
 // without parameter - call by reference

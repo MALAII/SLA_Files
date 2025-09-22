@@ -1,0 +1,19 @@
+an array is an object type designed for storing data collecions
+each value is considered as element.
+elements : list values are elements
+ordered:ordered with index
+zero index : starts from 0,1,2,3,4..
+length will take from index 1
+dynamic size: add or remove can be done inbetween replacement can be done so it is dynamic
+heterogeneous :array store elements in different data type values.
+
+Declarating an array in javascript:
+-----------------------------------
+const car=[]; //using variable
+     or
+const car=new array(); // using new keyword
+     or
+const car=[];
+car[0]='abc'  // using index position
+
+

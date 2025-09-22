@@ -2,7 +2,8 @@ DOM stands for Document Object Model .
 Document :
 --------
 file html, xml
-Objects :
+Objects : collection of tags will have properties and its behaviour -properties will be the same and
+ values will be changed according to the event
 --------
 Tags , elements
 Model:
@@ -21,7 +22,7 @@ html dom: standard model for html document
 interface to access content manipulate content dynamically
 
 html dom?
-html code will be converted into objects [which will have properties , methods, events]
+html code (tags and elements) will be converted into objects [which will have properties , methods, events]
 it defines:
 html elements as object
 considers properties of all html elements 
@@ -29,6 +30,19 @@ methods to access all html elements /actions
 events for all html elements 
 in other words the html dom is standard for how to get, change, add, or delete html document.  
 
-DOM diagram in screen shots. 
- 
+DOM diagram in screen shots.
+
+DOM Methods:
+-----------
+document.getElementById - will return html elements values
+document.getElementByClassName
+document.getElementByTagName
+
+querySelector -will return the first element style
+querySelectorAll - for returning all elements style using for loop [node list]
+DOM methods is used to perform an action or the event on the HTML elements
+
+.innerhtml is the property which is used to get or change the content of the html elemnt
+
+
  
