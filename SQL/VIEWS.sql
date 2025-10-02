@@ -1,3 +1,4 @@
+-- VIEWS:
 -- Views means virtual table 
 -- view used to restrict the particular data to other users. 
 -- more than one views can be created for a table.
@@ -33,26 +34,6 @@ select * from sam;
 
 drop view sam;           -- will only drop the view not the original table
 
--- union and union all:
-create table student( id int, fname varchar (20) ,phoneno bigint, age int);
-insert into student values(1, 'abc' , 2345678934567,25),
-(2, 'dcc' , 23456345367,23),
-(3, 'dsj', 09876456987,27);
-
-create table teacher (id int, name varchar(20), gender char(1), age int);
-insert into teacher values(4, 'erere', 'M' , 25),
-(5, 'gfriere', 'M' , 34),
-(6, 'shfure', 'F' , 28);
-
-
-select age from student union select age from teacher;
--- union will combine both table data and give the unique values
-
-select age from student where age>=25 union select age from teacher;
-select age from student where age>=25 union all select age from teacher;
-
-select age from student union all select age from teacher;
--- union all will combine both the table data also include duplicates
 
 -- task for view:
 use sla_kknagar;
@@ -66,6 +47,20 @@ insert into placements values('karthick' , 'python', 20, 'yes' , 0),
 ('ashok' , 'react', 20, 'yes' , 0);
 create view recruitment as select course, arrears, eligibility from placements;
 select * from recruitment;
+
+-- task for view:
+create database records;
+use records;
+create table placement (rollno int primary key , name varchar(50), course varchar(50), marks int, eligibility varchar(20));
+insert into placement values (101, 'malai', 'python', 85, 'eligible'),
+(102, 'saranya', 'java', 70, 'eligible'),
+(103, 'barath', 'dotnet', 45, 'eligible'),
+(104, 'kishore', 'php', 60, 'eligible');
+select *from placement;
+
+create view studentview as select marks, eligibility from placement;
+select * from studentview;
+   
 
 
 
