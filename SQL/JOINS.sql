@@ -9,18 +9,18 @@
 -- 1. inner join 
 -- only common values will be displayed in both the tables
 -- syntax for inner join:
--- select  column1 , column2, ..... columnN from tablename1 innerjoin tablename2 ON table1.columnname = table2.columnname;
+-- select  column1 , column2, ..... columnN from tablename1 innerjoin tablename2 ON table1. common columnname = table2.common columnname;
 
--- 2.full outer join
---   right outer join:
--- it will display all records in the right side tables and matched records in the left side tables
-
---    left outer join:
--- it will display all records in the left side table and matched records in the right side table.
-
---    full outer join :
+-- 2.full outer join:
 -- with the help of union can do it .
 -- both the table records with uncommon values will be shown.
+
+--  3. right outer join or right join:
+-- it will display all records in the right side tables and matched records in the left side tables
+
+--  4. left outer join or left join:
+-- it will display all records in the left side table and matched records in the right side table.
+
 
 use sla_kknagar;
 create table airports( id int not null , name varchar(20) not null, age int not null, address char (25), salary decimal(18, 2) , primary key(id));
@@ -47,7 +47,7 @@ select id , name , amount, data from airports left join nationalairports on airp
 -- leftside of left join is table 1 and right side of left join is table 2
 
 -- right join:
-select oid , airport_id , name from nationalairports right join airports on airports.id= nationalairports.airport_id;
+select * from nationalairports right join airports on airports.id= nationalairports.airport_id;
 -- right side of the right join will shows the matched values in the left side and left side of the right joi will show the unmatched values
 
 -- TASK:

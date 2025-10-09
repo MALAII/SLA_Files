@@ -11,10 +11,10 @@
 -- i.e rows and columns
 -- how this query all build with the help of commands
 -- DDL , DML , DQL , TCL
--- DATA DEFINITION LANGUAGE:
+-- DATA DEFINITION LANGUAGE: able to give structure of the table
 -- create , alter , truncate , drop , rename 
 
--- DATA MANIPULATION LANGUAGE:
+-- DATA MANIPULATION LANGUAGE: able to change or modify the data in database or table
 -- insert ,update,  delete
 
 -- DATA QUERY LANGUAGE:

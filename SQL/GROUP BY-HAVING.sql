@@ -1,7 +1,9 @@
--- group by:
+-- group by: summarize the column datas
 -- Groups rows that have the same values in one or more columns and allows you to perform aggregate functions on each group.
 -- having :
+-- filters the aggregate function table and give specific thing based on condition.
 -- Filters groups created by GROUP BY based on a condition.
+-- is used after filtering  the results after grouping
 
 use sla_kknagar;
 -- group by is used to group rows  that have the same value into it.

@@ -22,6 +22,7 @@ create view v1 as select name , marks , course from record;
 delete from record where course='testing';
 select * from record;  --  for employee access
 select * from v1;
+
 create view sam as select name , id from record;
 select * from sam;
 
