@@ -1,9 +1,10 @@
 -- Out parameter: (externally returns something with the help of select and aggregate functions)
 -- the value of an out parameter can be changed inside the procedure and it returns new values passed back when the function is called.
 -- an out parameter is used to pass a parameter as output or display like the select operator , but implicitly (through a set value) 
--- out is output:
+-- out is output: the output you should be given in out
 
 -- for getting the count of team using out parameter:
+use procedures;
 delimiter //
 create procedure getcustomercountybyteam(in p_team varchar(10), out p_count int)
 begin
